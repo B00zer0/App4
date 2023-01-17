@@ -31,11 +31,11 @@ namespace App4
             double containerD = Convert.ToDouble(containerStr);
             double massD = Convert.ToDouble(massStr);
             int numOfContainers = Convert.ToInt32(numofcontainers.Text);
-            result.Text = Convert.ToString(TobaccoCount(numOfContainers ,containerD, massD));
+            result.Text = Convert.ToString(ContainerContentCounter(numOfContainers ,containerD, massD));
 
         }
 
-    private double TobaccoCount(int numOfContainers, double containerBox,double mass)
+    private double ContainerContentCounter(int numOfContainers, double containerBox,double mass)
         {
             
             return mass - containerBox*numOfContainers;
