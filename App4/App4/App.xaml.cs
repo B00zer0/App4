@@ -1,7 +1,7 @@
 ﻿using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-
+//aasasas
 namespace App4
 {
     public partial class App : Application
