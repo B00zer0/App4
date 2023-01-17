@@ -32,9 +32,9 @@ namespace App4
             double massD = Convert.ToDouble(massStr);
             int numOfContainers = Convert.ToInt32(numofcontainers.Text);
             result.Text = Convert.ToString(TobaccoCount(numOfContainers ,containerD, massD));
-
+            //rerererr
         }
-
+        //eweiowioweiowioweioeioweweioweioweiejkdfdvjkdfsjhjhsdfjkjsdfsdfjkjkdfdjkl;fgjiogidgkttttldrtgsgklsgklgkljfgklgjk;lgljkfgklgjggfjkldg;ljgklglkglggggdgglkljsdgkljkldgklgklgklgkljdfkljkldsgklgklgkljdggklggjkldf;ljkg;;glkgk;ld
     private double TobaccoCount(int numOfContainers, double containerBox,double mass)
         {
             
