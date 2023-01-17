@@ -4,20 +4,53 @@
              x:Class="App4.MainPage">
 
     <StackLayout>
-        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
-            <Label Text="Привет, Писькаа!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+       
+        <Frame BackgroundColor="#2e2e2e">
+            <Label x:Name="result_output" Text ="0" HorizontalTextAlignment="End" FontSize="Title" Padding="10,10,30,10"/>
         </Frame>
-        <Label Text="Вес контейнера" FontSize="Title" Padding="30,10,30,10"/>
-        <Entry x:Name="ContainerB" Placeholder="ContainerBox_mass" Keyboard="Numeric"/>
-        <Label Text="Общий вес" FontSize="Title" Padding="30,10,30,10"/>
-        <Entry x:Name="Mass" Keyboard="Numeric"/>
-        <Entry x:Name="numofcontainers" Keyboard="Numeric"/>
+        
+        <Grid ColumnSpacing="20" Padding="15,10,15,10">
 
-        <Button Text="=" x:Name="BtnResult" Clicked="BttResult_Clicked" Padding="30,10,30,10" CornerRadius="0"/>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="50" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Frame BackgroundColor="#2e2e2e"  Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2">
+                <Entry x:Name="ContainerB" Placeholder="Вес контейнера" Keyboard="Numeric"/>
+            </Frame>
+            <Frame BackgroundColor="#2e2e2e"  Grid.Column="2" Grid.Row="0" >
+                <Entry x:Name="numofcontainers" Placeholder="Кол-во" Keyboard="Numeric"/>
+            </Frame>
+            <Frame BackgroundColor="#2e2e2e"  Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="3">
+                <Entry x:Name="Mass" Placeholder="Общий Вес" Keyboard="Numeric"/>
+            </Frame>
 
-        <Frame BackgroundColor="DarkOliveGreen" CornerRadius="23"> 
-        <Label x:Name="result" Text ="123vfghcv" FontSize="Title" Padding="10,10,30,10"/>
-        </Frame>
+
+        </Grid>
+
+        <Grid ColumnSpacing="20" Padding="15,10,15,10">
+            
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Button Text="+" x:Name="BtnPlus" Clicked="BtnPlus_Clicked" Padding="30,10,30,10" CornerRadius="0" Grid.Column="1" Grid.Row="0" />
+            <Button Text="=" x:Name="BtnResult" Clicked="BttResult_Clicked" Padding="30,10,30,10" CornerRadius="0" Grid.Column="2" Grid.Row="0" />
+            <Button Text="CLR" x:Name="BtnClr" Clicked="BtnClr_Clicked" Padding="30,10,30,10" CornerRadius="0" Grid.Column="0" Grid.Row="0" />
+            
+            
+        </Grid>
+
+        
     </StackLayout>
 
 </ContentPage>
