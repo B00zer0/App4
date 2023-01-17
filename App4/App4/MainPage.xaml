@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App4.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Привет, Писькаа!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <Label Text="Вес контейнера" FontSize="Title" Padding="30,10,30,10"/>
+        <Entry x:Name="ContainerB" Placeholder="ContainerBox_mass" Keyboard="Numeric"/>
+        <Label Text="Общий вес" FontSize="Title" Padding="30,10,30,10"/>
+        <Entry x:Name="Mass" Keyboard="Numeric"/>
+        <Entry x:Name="numofcontainers" Keyboard="Numeric"/>
+
+        <Button Text="=" x:Name="BtnResult" Clicked="BttResult_Clicked" Padding="30,10,30,10" CornerRadius="0"/>
+
+        <Frame BackgroundColor="DarkOliveGreen" CornerRadius="23"> 
+        <Label x:Name="result" Text ="123vfghcv" FontSize="Title" Padding="10,10,30,10"/>
+        </Frame>
+    </StackLayout>
+
+</ContentPage>
