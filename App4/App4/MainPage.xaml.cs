@@ -14,33 +14,53 @@ namespace App4
     public partial class MainPage : ContentPage
     {
         
+        private double container;
+        private double mass;
+        private int numOfContainers;
+        private string result;
+        
+
         public MainPage()
         {
             InitializeComponent();
 
-           
-
-
-
         }
-       
+        
+
         private void BttResult_Clicked(object sender, EventArgs e)
         {
-            string containerStr = ContainerB.Text;
-            string massStr = Mass.Text;
-            double containerD = Convert.ToDouble(containerStr);
-            double massD = Convert.ToDouble(massStr);
-            int numOfContainers = Convert.ToInt32(numofcontainers.Text);
-            result.Text = Convert.ToString(ContainerContentCounter(numOfContainers ,containerD, massD));
+            ContainerContentCounting();
+            result_output.Text = result;
+        }
+
+    private void ContainerContentCounting()
+        {
+            container = Convert.ToDouble(ContainerB.Text);
+            mass = Convert.ToDouble(Mass.Text);
+            numOfContainers = Convert.ToInt32(numofcontainers.Text);
+            result = Convert.ToString(mass - container * numOfContainers);
+            
 
         }
 
-    private double ContainerContentCounter(int numOfContainers, double containerBox,double mass)
+        private void BtnPlus_Clicked(object sender, EventArgs e)
         {
             
-            return mass - containerBox*numOfContainers;
-
+            if(result_output.Text == "0")
+            {
+                ContainerContentCounting();
+                result_output.Text = result;
+            }
+            else
+            {
+                ContainerContentCounting();
+                result_output.Text = Convert.ToString(Convert.ToDouble(result_output.Text) + Convert.ToDouble(result));
+            }
         }
-       
+
+        private void BtnClr_Clicked(object sender, EventArgs e)
+        {
+            result_output.Text = "0";
+        }
     }
 }
