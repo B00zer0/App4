@@ -1891,7 +1891,7 @@
         "dependencies": {
           "Xamarin.Essentials": "1.7.4",
           "Xamarin.Forms": "5.0.0.2545",
-          "sqlite-net-pcl": "1.8.116"
+          "sqlite-net-pcl": "1.7.335"
         },
         "compile": {
           "bin/placeholder/App4.dll": {}
