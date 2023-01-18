@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Wb52HWDPSLZHlZMFDIZQL36PFx4PGp4rjtfU/cjuRlnaGtRgI/zGBAROithOsup/zCrF1b/FR8zVVfCt2pdkzA==",
+  "dgSpecHash": "kYOaOjLBgJJvg3kkBnYAa1wxgFHQCjxbzmlhpWt950g44SNjdUpfNCv0nD/Q4djKVcnu+4L1RxdGe+BKuc17Zw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Artur\\source\\repos\\App4\\App4\\App4.Android\\App4.Android.csproj",
   "expectedPackageFiles": [
@@ -71,26 +71,5 @@
     "C:\\Users\\Artur\\.nuget\\packages\\xamarin.google.android.material\\1.4.0.2\\xamarin.google.android.material.1.4.0.2.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.google.guava.listenablefuture\\1.0.0.2\\xamarin.google.guava.listenablefuture.1.0.0.2.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1605",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Обнаружено понижение версии пакета Xamarin.Essentials с 1.7.4 на 1.7.0. Чтобы выбрать другую версию, создайте ссылку на пакет напрямую из проекта. \r\n App4.Android -> App4 -> Xamarin.Essentials (>= 1.7.4) \r\n App4.Android -> Xamarin.Essentials (>= 1.7.0)",
-      "libraryId": "Xamarin.Essentials",
-      "targetGraphs": [
-        "MonoAndroid,Version=v13.0"
-      ]
-    },
-    {
-      "code": "NU1605",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Обнаружено понижение версии пакета Xamarin.Forms с 5.0.0.2545 на 5.0.0.2196. Чтобы выбрать другую версию, создайте ссылку на пакет напрямую из проекта. \r\n App4.Android -> App4 -> Xamarin.Forms (>= 5.0.0.2545) \r\n App4.Android -> Xamarin.Forms (>= 5.0.0.2196)",
-      "libraryId": "Xamarin.Forms",
-      "targetGraphs": [
-        "MonoAndroid,Version=v13.0"
-      ]
-    }
-  ]
+  "logs": []
 }
